@@ -1,11 +1,14 @@
+var ref = new Firebase('https://tutorialsfirebase.firebaseio.com');
 
-html>
-   <head>
-      <script src = "https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-      <script type = "text/javascript" src = "index.js"></script>
-   </head>
-	
-   <body>
+var playersRef = ref.child("players");
+playersRef.push ({
+   name: "John",
+   number: 1,
+   age: 30
+});
 
-   </body>
-</html>
+playersRef.push ({
+   name: "Amanda",
+   number: 2,
+   age: 20
+});
